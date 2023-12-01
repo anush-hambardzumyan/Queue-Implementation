@@ -126,6 +126,7 @@ bool MyQueue<T>::isEmpty()
     return q_size == 0;
 }
 
+//FRONT
 template <typename T>
 T& MyQueue<T>::front()
 {
@@ -141,6 +142,7 @@ T& MyQueue<T>::front()
     }
 }
 
+//REAR
 template <typename T>
 T& MyQueue<T>::rear()
 {
