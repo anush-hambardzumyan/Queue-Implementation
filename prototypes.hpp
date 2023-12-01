@@ -10,9 +10,13 @@ class MyQueue
     T* q_ptr;
     size_t q_cap;
     size_t q_size;
+    size_t q_index;
 
     public:
     MyQueue();
+    void allocator();
+    void print();
+    void reallocator();
     void enqueue(T);
     void dequeue();
     T& front();
@@ -20,7 +24,7 @@ class MyQueue
     size_t size();
     bool isEmpty();
     ~MyQueue();
-}
+};
 
 
 #include "implementations.hpp"
