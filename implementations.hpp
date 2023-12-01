@@ -14,7 +14,7 @@ MyQueue<T>::MyQueue()
 template <typename T>
 void MyQueue<T>::allocator()
 {
-    q_cap = 2;
+    q_cap = 10;
     q_ptr = new T [q_cap];
 }
 
